@@ -118,7 +118,7 @@ const About = () => {
     animate='show'
     exit='hidden'
     className="h2">
-      Pavadas
+      About me
     </motion.h2>
     <motion.p
     variants={fadeIn('right', 0.4)}
@@ -145,34 +145,34 @@ const About = () => {
     <div className="flex flex-1 xl:gap-x-6">
     <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-        <CountUp start={0} end={10} duration={5} /> +
+        <CountUp start={0} end={8} duration={5} /> <span className="text-xl">mounth</span>
       </div>
       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Time of experience</div>
     </div>
-    <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+    {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-        <CountUp start={0} end={250} duration={5} /> +
+        <CountUp start={0} end={3} duration={5} /> +
       </div>
       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
         Satiesfied clients
       </div>
-    </div>
-    <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+    </div> */}
+    <div className="relative flex-1 ">
       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-        <CountUp start={0} end={650} duration={5} /> +
+        <CountUp start={0} end={4} duration={5} /> 
       </div>
       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
         Finished Proyects
       </div>
       </div>
-      <div className="relative flex-1">
+      {/* <div className="relative flex-1">
       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
         <CountUp start={0} end={8} duration={5} /> +
       </div>
       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
         Winning awards
       </div>
-      </div>
+      </div> */}
     </div>
     </motion.div>
     </div>
