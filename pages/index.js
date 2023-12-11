@@ -30,7 +30,7 @@ const Home = () => {
           className="text-2xl text-white max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
           My name is Emiliano
           <br />
-          I'm a <span className="text-accent">Full Stack Developer</span>
+          I&apos;m a <span className="text-accent">Full Stack Developer</span>
         </motion.h2>
         <div className="flex justify-center xl:hidden relative">
           <ProjectsBtn />

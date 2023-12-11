@@ -18,14 +18,14 @@ const Work = () => {
         animate="show"
         exit="hidden"
         className="h2 xl:mt-8">
-        My work <span className="text-accent">.</span>
+        My work<span className="text-accent">.</span>
         </motion.h2>
         <motion.p
         varients={fadeIn('up', 0.4)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="mb-4 max-w-[400px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dicta odit quis incidunt nemo quisquam esse quos sunt eligendi sit? Iusto ipsa dignissimos accusantium obcaecati, veniam itaque eligendi harum repellendus?
+        className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-white text-xl">Here are some of my projects:
         </motion.p>
       </div>
       <motion.div

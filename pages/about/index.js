@@ -35,18 +35,18 @@ const aboutData = [
       {
         title: 'Full Stack Developer',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <FaBootstrap />,
-          <FaSass />,
-          <SiTailwindcss />,
-          <SiSequelize />,
-          <SiRedux />,
-          <SiEspressif />,
-          <SiPostgresql />,
-          <SiJquery />
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaReact key="React" />,
+          <FaBootstrap key="Booststrap" />,
+          <FaSass key="Sass" />,
+          <SiTailwindcss key="Tailwind" />,
+          <SiSequelize key="sequelise" />,
+          <SiRedux key="redux" />,
+          <SiEspressif key="express" />,
+          <SiPostgresql key="sql" />,
+          <SiJquery key="jquery" />
         ],
       },
     ],
@@ -126,15 +126,15 @@ const About = () => {
     animate='show'
     exit='hidden'
     className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl-mb-12 px-2 xl:px-0">
-          Full Stack Web Developer with a
-          background in Bachelor's Degree
-          in Nutrition, experienced in
-          collaborative work and code
-          analysis. Skills in problem
-          solving and promoting group
-          collaboration. Passionate about
-          basketball and enthusiastic
-          about teamwork.
+           Full Stack Web Developer with a
+  background in Bachelor&apos;s Degree
+  in Nutrition, experienced in
+  collaborative work and code
+  analysis. Skills in problem
+  solving and promoting group
+  collaboration. Passionate about
+  basketball and enthusiastic
+  about teamwork.
     </motion.p>
     <motion.div
     variants={fadeIn('right', 0.6)}
@@ -209,9 +209,9 @@ const About = () => {
           <div className="hidden md:flex">-</div>
           <div>{item.stage}</div>
           <div className="flex gap-x-4">
-            {item.icons?.map((icon, itemIndex) => {
+            {item.icons?.map((icon, iconIndex) => {
               return (
-               <div className="text-2xl text-white">{icon}</div>
+               <div key={iconIndex} className="text-2xl text-white">{icon}</div>
               )
             })}
           </div>
