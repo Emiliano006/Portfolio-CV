@@ -55,7 +55,7 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'Full Stack Developer - Henry',
+        title: 'Full Stack Developer - Henry Bootcamp',
         stage: '2023',
       },
     ],

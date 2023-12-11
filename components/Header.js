@@ -11,7 +11,7 @@ const Header = () => {
         <Link href={'/'}>
              <h1
               className=" text-4xl font-bold mt-6 text-white/60"
-             ><span className="text-white">emiliano</span> costabile<span className="text-accent">.</span></h1>
+             ><span className="text-white">Emiliano</span> Costabile<span className="text-accent">.</span></h1>
         </Link>
         <Socials />
       </div>
