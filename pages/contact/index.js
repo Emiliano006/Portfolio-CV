@@ -142,7 +142,7 @@ const Contact = () => {
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2
-            className="h2 text-center mb-12"
+            className="h2 text-center mb-12 mt-2"
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             animate="show"
@@ -201,7 +201,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="btn rounded-full border border-white max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+              className="btn rounded-full border border-white max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group text-center md:text-left md:justify-start mx-auto md:mx-0"
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let&apos;s talk

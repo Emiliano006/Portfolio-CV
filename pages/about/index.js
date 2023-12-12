@@ -99,7 +99,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-  <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+  <div className="h-full bg-primary/30 py-32 text-center xl:text-left mb-4">
   <Circles />
   <motion.div
     variants={fadeIn('right', 0.2)}
@@ -117,7 +117,7 @@ const About = () => {
     initial='hidden'
     animate='show'
     exit='hidden'
-    className="h2">
+    className="h2 mt-2">
       About me
     </motion.h2>
     <motion.p
@@ -142,7 +142,7 @@ const About = () => {
     animate='show'
     exit='hidden'
     className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
-    <div className="flex flex-1 xl:gap-x-6">
+    <div className="flex flex-1 xl:gap-x-6 mb-3">
     <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
         <CountUp start={0} end={8} duration={5} /> <span className="text-xl">mounth</span>
@@ -159,7 +159,7 @@ const About = () => {
     </div> */}
     <div className="relative flex-1 ">
       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-        <CountUp start={0} end={4} duration={5} /> 
+        <CountUp start={0} end={4} duration={5} />
       </div>
       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
         Finished Proyects
@@ -179,7 +179,7 @@ const About = () => {
               href="/CV Emiliano Costabile English.pdf"
               target="_blank"
               rel="noopener"
-              className="btn rounded-full border border-white max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+              className="btn rounded-full border border-white max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group text-center md:text-left md:justify-start mx-auto md:mx-0 mb-6"
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Download CV
@@ -200,7 +200,7 @@ const About = () => {
         key={itemIndex}
         className={`${
         index === itemIndex &&
-      'text-accent after:w-[100%] after:bg-red-600 after:transition-all after:duration-300'
+      'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
         } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
         onClick={() => setIndex(itemIndex)}
         >
