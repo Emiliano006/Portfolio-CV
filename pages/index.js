@@ -19,7 +19,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           className="h1">
-        Welcome <br /> Into{' '}
+        Welcome <br /> To{' '}
         <span className="text-accent">My Portfolio</span>
         </motion.h1>
         <motion.h2
