@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import { BsArrowRight } from "react-icons/bs";
 // icons
 import {
   FaHtml5,
@@ -175,6 +175,17 @@ const About = () => {
       </div> */}
     </div>
     </motion.div>
+    <a
+              href="/CV Emiliano Costabile English.pdf"
+              target="_blank"
+              rel="noopener"
+              className="btn rounded-full border border-white max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+            >
+              <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                Download CV
+              </span>
+              <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
+            </a>
     </div>
     <motion.div
     variants={fadeIn('left', 0.4)}
