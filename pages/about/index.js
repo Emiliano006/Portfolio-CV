@@ -99,7 +99,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-  <div className="h-full bg-primary/30 py-32 text-center xl:text-left mb-4 mt-6 ">
+  <div className="h-screen bg-primary/30 py-32 text-center xl:text-left mb-4 mt-6 overflow-y-auto">
   <Circles />
   <motion.div
     variants={fadeIn('right', 0.2)}
@@ -177,7 +177,7 @@ const About = () => {
     initial='hidden'
     animate='show'
     exit='hidden'
-    className="flex flex-col w-full xl:max-w-[60%] h-[480px] xl:pl-12 overflow-y-auto">
+    className="flex flex-col w-full xl:max-w-[60%] h-[480px] xl:pl-12 ">
     <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 mt-6">
       {aboutData.map((item, itemIndex) => {
       return (
@@ -194,7 +194,8 @@ const About = () => {
       );
       })}
     </div>
-    <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start mb-10">
+    <div className="py-2 pb-10 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start mb-20
+    overflow-y-auto">
       {aboutData[index].info.map((item, itemIndex)=> {
         return (
           <div

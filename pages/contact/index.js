@@ -201,7 +201,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="btn rounded-full border border-white max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group text-center md:text-left md:justify-start mx-auto md:mx-0"
+              className="btn rounded-full border border-white max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group text-center md:text-left md:justify-start mx-auto md:mx-0 mb-10"
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let&apos;s talk
