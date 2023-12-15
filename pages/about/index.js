@@ -194,7 +194,7 @@ const About = () => {
       );
       })}
     </div>
-    <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start mb-5">
+    <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start mb-10">
       {aboutData[index].info.map((item, itemIndex)=> {
         return (
           <div
