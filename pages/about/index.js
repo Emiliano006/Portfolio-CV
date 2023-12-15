@@ -99,7 +99,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-  <div className="h-full bg-primary/30 py-32 text-center xl:text-left mb-4">
+  <div className="h-full bg-primary/30 py-32 text-center xl:text-left mb-4 mt-6">
   <Circles />
   <motion.div
     variants={fadeIn('right', 0.2)}
@@ -117,8 +117,8 @@ const About = () => {
     initial='hidden'
     animate='show'
     exit='hidden'
-    className="h2 mt-2">
-      About me
+    className="h2 ">
+      About me<span className="text-accent">.</span>
     </motion.h2>
     <motion.p
     variants={fadeIn('right', 0.4)}
@@ -145,7 +145,7 @@ const About = () => {
     <div className="flex flex-1 xl:gap-x-6 mb-3">
     <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-        <CountUp start={0} end={8} duration={5} /> <span className="text-xl">mounth</span>
+        <CountUp start={0} end={9} duration={5} /> <span className="text-xl">mounth</span>
       </div>
       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Time of experience</div>
     </div>
@@ -179,7 +179,7 @@ const About = () => {
               href="/CV Emiliano Costabile English.pdf"
               target="_blank"
               rel="noopener"
-              className="btn rounded-full border border-white max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group text-center md:text-left md:justify-start mx-auto md:mx-0 mb-6"
+              className="btn rounded-full border border-white max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group text-center  md:justify-start mx-auto md:mx-0 mb-6 text-1xl"
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Download CV
@@ -193,7 +193,7 @@ const About = () => {
     animate='show'
     exit='hidden'
     className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
-    <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+    <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 mt-6">
       {aboutData.map((item, itemIndex) => {
       return (
         <div

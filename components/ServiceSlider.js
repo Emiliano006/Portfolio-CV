@@ -70,7 +70,7 @@ const ServiceSlider = () => {
     clickable: true
   }}
   modules={[FreeMode, Pagination]}
-  className="h-[240px] sm:h-[380px]"
+  className="h-[250px] sm:h-[390px]"
   >
   {serviceData.map((item, index) => {
     return (
@@ -80,9 +80,9 @@ const ServiceSlider = () => {
         <div className="text-4xl text-accent mb-4">{item.icon}</div>
         <div className="mb-8">
           <div className="mb-2 text-lg">{item.title}</div>
-          <p className="max-w-[350px] leading-normal">{item.description}</p>
+          <p className="max-w-[350px] leading-normal mb-2">{item.description}</p>
         </div>
-        <div className="text-3xl">
+        <div className="text-2xl">
           <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
         </div>
         </div>

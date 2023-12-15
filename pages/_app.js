@@ -13,7 +13,7 @@ import { AnimatePresence, motion } from "framer-motion";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
-  <Layout>
+  <Layout className="mb-10">
   <AnimatePresence mode="wait">
   <motion.div key={router.route} className="h-full">
   <Transition />

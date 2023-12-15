@@ -4,7 +4,7 @@ import {RiLinkedinLine, RiInstagramLine, RiDribbbleLine, RiBehanceLine, RiGithub
 
 const Socials = () => {
   return (
-  <div className="flex items-center gap-x-5 text-lg">
+  <div className="flex items-center gap-x-5 sm:text-sm md:text-2xl lg:text-2xl">
     <Link href={'https://www.instagram.com/emiliano.costabile/'}
       target="_blank"
       rel="noopener"
