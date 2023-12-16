@@ -21,6 +21,11 @@ module.exports = {
       xl: '1200px',
     },
     extend: {
+      fontSize: {
+        'xxs': '.5rem', // Ejemplo de tamaño de texto extra extra pequeño
+        '2xs': '.375rem', // Ejemplo de otro tamaño de texto extra extra pequeño
+        // Puedes definir más tamaños de texto según sea necesario
+      },
       colors: {
         primary: '#131424',
         secondary: '#393A47',

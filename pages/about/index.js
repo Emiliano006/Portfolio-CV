@@ -177,7 +177,7 @@ const About = () => {
     initial='hidden'
     animate='show'
     exit='hidden'
-    className="flex flex-col w-full xl:max-w-[60%] h-[480px] xl:pl-12 ">
+    className="flex flex-col w-full xl:max-w-[60%] mt-20 h-[600px] xl:pl-12">
     <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 mt-6">
       {aboutData.map((item, itemIndex) => {
       return (
@@ -194,20 +194,20 @@ const About = () => {
       );
       })}
     </div>
-    <div className="py-2 pb-10 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start mb-50 sm:mb-40 overflow-y-auto">
+    <div className="py-2 pb-10 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start mb-20 xl:mb-40 overflow-y-auto">
       {aboutData[index].info.map((item, itemIndex)=> {
         return (
           <div
            key={itemIndex}
-           className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
-           >
-          <div className="font-light mb-2 md:mb-0">{item.title}</div>
-          <div className="hidden md:flex">-</div>
+           className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60 sm:text-xs"
+          >
+          <div className="font-light mb-2 md:mb-0 text-1xl xl:text-base">{item.title}</div>
+          {/* <div className="hidden md:flex">-</div> */}
           <div>{item.stage}</div>
           <div className="flex gap-x-4">
             {item.icons?.map((icon, iconIndex) => {
               return (
-               <div key={iconIndex} className="text-2xl text-white">{icon}</div>
+               <div key={iconIndex} className="text-2xl text-white ">{icon}</div>
               )
             })}
           </div>
