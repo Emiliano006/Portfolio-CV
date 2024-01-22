@@ -24,6 +24,8 @@ import {
   SiPostgresql,
   SiJquery,
   SiTailwindcss,
+  SiTypescript,
+  SiNestjs,
 } from "react-icons/si";
 
 
@@ -46,7 +48,9 @@ const aboutData = [
           <SiRedux key="redux" />,
           <SiEspressif key="express" />,
           <SiPostgresql key="sql" />,
-          <SiJquery key="jquery" />
+          <SiJquery key="jquery" />,
+          <SiTypescript key="Typescript" />,
+          <SiNestjs key="Nestjs" />
         ],
       },
     ],
@@ -145,13 +149,13 @@ const About = () => {
     <div className="flex flex-1 xl:gap-x-6 mb-3">
     <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-        <CountUp start={0} end={9} duration={5} /> <span className="text-xl">mounth</span>
+        <CountUp start={0} end={1} duration={5} /> <span className="text-xl">year</span>
       </div>
       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Time of experience</div>
     </div>
     <div className="relative flex-1 ">
       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-        <CountUp start={0} end={4} duration={5} />
+        <CountUp start={0} end={5} duration={5} />
       </div>
       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
         Finished Proyects
