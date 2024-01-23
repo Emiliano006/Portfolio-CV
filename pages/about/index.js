@@ -106,11 +106,11 @@ const About = () => {
   <div className="h-screen bg-primary/30 py-32 text-center xl:text-left mb-40 mt-6 overflow-y-auto">
   <Circles />
   <motion.div
-    variants={fadeIn('right', 0.2)}
+    variants={fadeIn('right', 0.4)}
     initial='hidden'
     animate='show'
     exit='hidden'
-    className="hidden xl:flex absolute bottom-0 -left-[205px]"
+    className="hidden xl:flex absolute bottom-0 left-[-40px]"
     >
     <Avatar />
   </motion.div>
@@ -149,7 +149,7 @@ const About = () => {
     <div className="flex flex-1 xl:gap-x-6 mb-3">
     <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-        <CountUp start={0} end={1} duration={5} /> <span className="text-xl">year</span>
+        <CountUp start={0} end={1} duration={12} /> <span className="text-xl">year</span>
       </div>
       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Time of experience</div>
     </div>

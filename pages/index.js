@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
-import Imagen from "../components/Imagen";
+import Avatar from "../components/Avatar";
 
 import {motion} from "framer-motion";
 
@@ -56,7 +56,7 @@ const Home = () => {
           exit="hidden"
           transition={{duration: 1, ease: 'easeInOut'}}
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]">
-      <Imagen />
+      <Avatar />
     </motion.div>
     </div>
   </div>
