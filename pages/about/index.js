@@ -11,6 +11,7 @@ import {
   FaBootstrap,
   FaJsSquare,
   FaSass,
+  NextJs,
 } from "react-icons/fa";
 
 import {
@@ -25,7 +26,7 @@ import {
   SiJquery,
   SiTailwindcss,
   SiTypescript,
-  SiNestjs,
+  SiNextjs,
 } from "react-icons/si";
 
 
@@ -50,7 +51,7 @@ const aboutData = [
           <SiPostgresql key="sql" />,
           <SiJquery key="jquery" />,
           <SiTypescript key="Typescript" />,
-          <SiNestjs key="Nestjs" />
+          <SiNextdotjs key="Nextjs" alt="NextJs"/>
         ],
       },
     ],
@@ -76,7 +77,7 @@ const aboutData = [
         stage: '2023',
       },
       {
-        title: 'Creative web design course: planning and programming from scratch - Domestika',
+        title: 'Creative web design course - Domestika',
         stage: '2022',
       },
       {
@@ -206,7 +207,7 @@ const About = () => {
            className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60 sm:text-xs"
           >
           <div className="font-light mb-2 md:mb-0 text-1xl xl:text-base">{item.title}</div>
-          {/* <div className="hidden md:flex">-</div> */}
+          <div className="hidden md:flex">-</div>
           <div>{item.stage}</div>
           <div className="flex gap-x-4">
             {item.icons?.map((icon, iconIndex) => {
