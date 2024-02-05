@@ -5,7 +5,7 @@ const workSlider = {
       images: [
         {
           title: 'CanchaYa',
-          path: '/Opera Captura de pantalla_2023-11-26_025606_cancha-ya.vercel.app.png',
+          path: '/canchaya.png',
           href: "http://cancha-ya.vercel.app/",
           target: "_blank",
           rel: "noopener"
@@ -21,6 +21,13 @@ const workSlider = {
           title: 'Primer CV',
           path: '/Captura de pantalla (5).png',
           href: "http://emiliano006.github.io/Portfolio/",
+          target: "_blank",
+          rel: "noopener"
+        },
+        {
+          title: 'Pecosa Creaciones',
+          path: '/pecosa.png',
+          href: "https://pecosa-creaciones.vercel.app",
           target: "_blank",
           rel: "noopener"
         },
